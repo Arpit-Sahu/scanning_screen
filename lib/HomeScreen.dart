@@ -67,7 +67,7 @@ String? imageUrl;
             ),
           ),
           Expanded(
-            flex: 2,
+            flex: 4,
                     child: BuildView(),
           ),
           SizedBox(height: 20),
