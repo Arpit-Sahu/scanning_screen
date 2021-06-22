@@ -1,8 +1,8 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:scanningscreen/Constanta.dart';
 import 'package:http/http.dart' as http;
+import 'package:scanningscreen/Scanner.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -68,9 +68,7 @@ String? imageUrl;
           ),
           Expanded(
             flex: 2,
-                    child: Container(
-              color: Colors.grey[300],
-            ),
+                    child: BuildView(),
           ),
           SizedBox(height: 20),
           Text('Search Contact', style: kBoldTextStyle,),
